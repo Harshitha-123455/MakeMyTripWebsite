@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip - #1 Travel Website</title>
+    <!--favicon-->
+    <link rel="icon" href="img2.jpg" />
+    <!--CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--fontawesome kit-->
+    <script src="https://kit.fontawesome.com/b84dc15949.js" crossorigin="anonymous"></script>
+    <style>
+        /*section 1*/
+        .nav-link {
+            color: white !important;
+        }
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .mai {
+            width: 100vw;
+            height: 85vh;
+            background-image: url("img1.jpg");
+            background-size: cover;
+            position: static;
+        }
+
+        /*section 2*/
+        .one {
+            width: 80%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 140px;
+            margin-right: 100px;
+            align-items: center;
+            border-radius: 12px;
+            justify-content: space-evenly;
+            box-shadow: 0px 4px 8px rgba(209, 209, 205);
+            background-color: #ffffff;
+        }
+
+        .parent1 {
+            margin: 0px;
+        }
+
+        .one1 {
+            width: 75%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            margin-right: 50px;
+            align-items: center;
+            border-radius: 25px;
+            justify-content: space-evenly;
+            background-color: #ffffff;
+        }
+
+        /*section 3*/
+        .two2 {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 310px;
+            margin-left: 70px;
+            margin-right: 50px;
+            align-items: center;
+            border-radius: 12px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            background-color: #ffffff;
+            color: black;
+            font-size: 12px;
+            box-shadow: 0px 4px 8px rgb(151, 151, 149);
+        }
+
+        .two .fa-solid {
+            color: #0066ff;
+            width: 5%;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .three {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 100px;
+            margin-top: -1%;
+            margin-left: 50px;
+            margin-right: 50px;
+            align-items: center;
+            background-color: #ffffff;
+            color: black;
+            border: 2px solid black;
+            justify-content: space-around;
+            border: none;
+        }
+
+        .three1 {
+            width: 160px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            position: 1px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 2px 2px 2px 2px;
+
+        }
+
+        .three1:hover {
+            border: 2px solid rgb(68, 68, 239);
+            background-color: rgb(216, 216, 222);
+            color: rgb(72, 72, 238);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .three2 {
+            margin-top: -1%;
+            margin-left: 47%;
+        }
+
+        .first {
+            width: 100%;
+            height: 90px;
+            margin-left: 50px;
+            margin-right: 50px;
+            align-items: center;
+            background-color: #ffffff;
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 12px;
+            font-size: 15px;
+        }
+
+        .first1 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            position: 1px;
+            border: 1px solid grey;
+            margin-left: 100px;
+            border: none;
+        }
+
+        .first1:hover {
+            background-color: #bbd3e3;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 3px 3px 3px 3px;
+        }
+
+        .second {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 2%;
+            background-color: #ffffff;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .second1 {
+            width: 20%;
+            height: 100%;
+            border-radius: 1px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            position: 1px;
+            border: 1px solid grey;
+            margin-bottom: 14%;
+        }
+
+        .second1:hover {
+            background-color: rgb(205, 219, 237);
+        }
+
+        .four {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            height: 85px;
+            margin-top: 1%;
+            margin-left: 180px;
+            margin-right: 150px;
+            align-items: center;
+            border-radius: 50px;
+            background-color: #ffffff;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            border: 1px solid #a5a2a2;
+        }
+
+        /*section 4*/
+
+        .child1 {
+            width: 70vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 20px;
+            margin: 50px 50px 10px 200px;
+            background-color: #f9f9f9;
+            border-radius: 25px;
+            box-shadow: 0px 4px 8px rgba(209, 209, 205);
+        }
+
+        .child21 {
+            display: flex;
+            flex-direction: row;
+            grid-column: 1 / 3;
+            background-color: #eaeaea;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .child21 p {
+            margin-left: 40px;
+        }
+
+        .child22 {
+            background-color: #f9f9f9;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        #bnow1 {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(53, 53, 220);
+        }
+
+        #bnow2 {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(53, 53, 220);
+        }
+
+        #bnow3 {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(53, 53, 220);
+        }
+
+        #bnow4 {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(53, 53, 220);
+        }
+
+        /*section 5*/
+        .child2 {
+            height: 280px;
+            display: flex;
+            flex-direction: row;
+            vertical-align: middle;
+            margin-top: 5%;
+            margin-left: 8%;
+            margin-right: 130px;
+            align-items: center;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgb(209, 209, 205);
+            background-color: #ffffff;
+        }
+
+        .child2 h1 {
+            margin-left: 50px;
+            font-size: 34px;
+
+        }
+
+        .child11 {
+            width: 400px;
+            height: 160px;
+            border: 1px solid black;
+            background-image: url("img23.jpg");
+            background-size: cover;
+            margin-left: 50p x;
+            border-radius: 10px;
+        }
+
+        .child12 {
+            width: 400px;
+            height: 160px;
+            border: 1px solid black;
+            background-image: url("img24.jpg");
+            background-size: cover;
+            margin-left: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(209, 209, 205);
+        }
+
+        .child13 {
+            width: 400px;
+            height: 160px;
+            border: 1px solid black;
+            background-image: url("img25.jpg");
+            background-size: cover;
+            margin-left: 15px;
+            margin-right: 50px;
+            border-radius: 10px;
+        }
+
+        /*Second Part*/
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sec1 {
+            margin-top: 3%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1250px;
+            width: 150%;
+            padding: 25px;
+            height: 100px;
+
+        }
+
+        .grid-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .grid-item img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        .grid-item p {
+            font-size: 15px;
+            color: #555;
+            background: #fff;
+        }
+
+        .sec2 img {
+            margin-top: 4%;
+            width: 900px;
+            height: 120px;
+            margin-bottom: 3%;
+        }
+
+        .sec3 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .promo-container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            width: 1700px;
+        }
+
+        .promo-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .promo-header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background-color: #fff;
+        }
+
+        .promo-header h1 {
+            font-size: 24px;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .promo-text {
+            margin-bottom: 20px;
+            color: #555;
+            background-color: #fff;
+        }
+
+        .promo-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .promo-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            width: 70%;
+            max-width: 300px;
+            background-color: #fff;
+        }
+
+        .promo-form button {
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .seec4 {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec4 img {
+            background: #fff;
+        }
+
+        .hotel-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: -30%;
+            margin-left: 5%;
+            margin-right: 3%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            width: 90%;
+            max-width: 1250px;
+            height: 350px;
+            padding: 10px;
+        }
+
+        .hotel-items {
+            padding-left: 1%;
+            background: #fff;
+            padding: 20px;
+        }
+
+        .hotel-header h2 {
+            margin-top: -35;
+        }
+
+        .seec5 {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .places-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #fff;
+            align-items: center;
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 3%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            width: 90%;
+            max-width: 1400px;
+            height: 350px;
+            padding: 10px;
+        }
+
+        .places-items {
+            padding-left: 1%;
+            background: #fff;
+            padding: 20px;
+        }
+
+        .sec6 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 2%;
+            margin-top: 5%;
+            font-size: 75%;
+        }
+
+        .sec6 p {
+            color: #605d5d;
+        }
+
+        .sec6 p:hover {
+            color: #007bff;
+            cursor: pointer;
+
+        }
+
+        .sec7 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            margin-top: 5%;
+            background-color: #c3c1c1;
+            margin-bottom: 5%;
+        }
+
+        .data-container {
+            display: flex;
+            flex-direction: row;
+            background-color: #c3c1c1;
+
+        }
+
+        .data-item {
+            padding: 30px;
+            background: #c3c1c1;
+        }
+
+        .data-item p {
+            background: #c3c1c1;
+        }
+
+        .data-item h3 {
+            background: #c3c1c1;
+        }
+
+        .sec8 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: row;
+            width: 1250px;
+            background: black;
+            margin-left: 8.5%;
+        }
+
+        .social-container img {
+            background: black;
+        }
+
+        .social-item2 {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--section 1-->
+    <section class="mai">
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="display : flex; flex-direction : row;">
+                    <p style="color:white;">make</p><img src="img2.jpg" width="15%" style="border-radius:10px;" />
+                    <p style="color : white">trip</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <img src="img28.jpg" width="20%" style="margin-right:25px;background-color:balck;" /> <a
+                                class="nav-link active" aria-current="page" href="#">List Your Property.<br /> Grow your
+                                business!</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="img29.jpg" width="20%" style="margin-right:25px;background-color:balck;" /> <a
+                                class="nav-link" href="#">Introducing mybizz.<br /> Business Travel Solution</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="img30.jpg" width="12%" style="margin-right:25px;background-color:balck;" /> <a
+                                class="nav-link" href="#">My Trips Manage your Bookings</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"><button class="btn btn-info"
+                                    style="color:white;background-image:linear-gradient(to right,white,#339dc7,#00a6ff,#0066ff);"><img
+                                        src="img26.jpg" width="10%" style="margin-right:5px;">Login or Create Account <i
+                                        class="fa-solid fa-angle-down"></i></button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"> <button class="btn btn-light"
+                                    style="background-color:transparent;color:white"><img src="img27.jpg" width="15%" />
+                                    IN | ENG
+                                    <i class="fa-solid fa-angle-down"></i></button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-divider"><button class="btn btn-light"
+                                    style="margin:8px;background-color:transparent;color:white;"> INR <i
+                                        class="fa-solid fa-angle-down"></i>
+                                </button></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!--section 2-->
+        <section class="parent1">
+            <div class="one">
+                <img src="img4.jpg" width="7%" id="img1" />
+                <img src="img5.jpg" width="7%" id="img2" />
+                <img src="img6.jpg" width="6%" id="img3" />
+                <img src="img7.jpg" width="6%" id="img4" />
+                <img src="img8.jpg" width="6%" id="img5" />
+                <img src="img9.jpg" width="7%" id="img6" />
+                <img src="img10.jpg" width="6%" id="img7" />
+                <img src="img11.jpg" width="7%" id="img8" />
+                <img src="img12.jpg" width="7%" id="img9" />
+            </div>
+        </section>
+
+        <!--section 3-->
+        <!--part 1-->
+        <section class="two2">
+            <div class="first">
+                <div class="first1">
+                    <input type="radio" /> <label style="margin-left:1px;">One
+                        Way</label>
+                </div>
+                <div class="first1">
+                    <input type="radio" /> <label style="margin-left:1px;">Round
+                        Trip</label>
+                </div>
+                <div class="first1">
+                    <input type="radio" /> <label style="margin-left:1px;">Multi
+                        City</label>
+                </div>
+                <div class="first1" style="margin-left:5px;">
+                    <p style="margin-left : 30rem;">Book International and Domestic Flights</p>
+                </div>
+            </div><br />
+
+            <!--img-->
+            <img src="img31.jpg" width="3%"
+                style="border-radius:50px;position:5px;z-index:5;margin-left:-54%;margin-bottom:-5%;" />
+
+            <!--Part 2-->
+            <div class="second">
+                <div class="second1">
+                    <a>From</a><br />
+                    <h3><b>Delhi</b></h3><br />
+                    <p style="font-size:15px;color:#535151">DEL, Delhi Airport India</p>
+                </div>
+                <div class="second1">
+                    <p style="font-family:Arial;font-size:10px;margin-bottom:-5px;"><a>To</a><br />
+                    <h3><b>Bengaluru</b></h3><br />
+                    <p style="font-size:15px;color:#535151">BLR, Bengaluru International Airport...</p>
+                    </p>
+                </div>
+                <div class="second1">
+                    <p>Departure</p><br />
+                    <h3><b>9 Dec'24 <i class="fa-solid fa-angle-down"></i></b></h3>
+                    <p>Monday</p>
+                </div>
+                <div class="second1">
+                    <p>Return</p><br />
+                    <p style="font-size:13px;color:#737171"> <b>Tap to add a return
+                            date for bigger
+                            discounts</b></p>
+                </div>
+                <div class="second1">
+                    <p>Travellers & Class</p>
+                    <h3><b> Traveller <i class="fa-solid fa-angle-down" width="1%;"></i></b></h3><br />
+                    <p style="font-size:15px;color:#535151">
+                        Economy
+                        /Premium Economy</p>
+                </div>
+            </div>
+            <!--part 3-->
+            <div class="three">
+                <div>
+                    <img src="img13.jpg" width="100%" id="logo1" />
+                </div>
+                <div class="three1">
+                    <input type="radio" />
+                    <label>Regular</label><br />
+                    <p>Regular Fares</p>
+                </div>
+                <div class="three1">
+                    <input type="radio" />
+                    <label>Student</label>
+                    <p>Extra discounts/baggage</p>
+                </div>
+                <div class="three1">
+                    <input type="radio" />
+                    <label>Senior Citizen</label><br />
+                    <p>Up to Rs.600 off</p>
+                </div>
+                <div class="three1">
+                    <input type="radio" />
+                    <label>Armed Forces</label><br />
+                    <p>Up to Rs.600 off</p>
+                </div>
+                <div class="three1">
+                    <input type="radio" />
+                    <label>Doctor & Nurses</label><br />
+                    <p>Up to Rs.600 off</p>
+                </div>
+            </div>
+        </section>
+
+        <!--search button-->
+        <button
+            style="color:white;border-radius:50px;padding:5px 50px 5px 50px;font-size:25px;margin-top:-2%;margin-left:43.5%;"
+            class="btn btn-primary three2"><b>SEARCH</b></button>
+
+        <p style="color:white; text-align:center;font-size:15px;"> <i class="fa-solid fa-angles-down"></i> <b> Explore
+                More </b> <i class="fa-solid fa-angles-down"></i></p>
+
+        <!--part 4-->
+        <div class="four">
+            <img src="img14.jpg" width="5%" style="border-radius:50px;" /><a href="#"
+                style="text-decoration:none;color:black;">Where2Go</a>
+            <img src="img15.jpg" width="5%" /><a href="#" style="text-decoration:none;color:black;">How2Go <button
+                    style="background-image:linear-gradient( #d44bd8, #d84a4a);">new</button><br />Find
+                routes to anywhere</a>
+            <img src="img16.jpg" width="5%" /><a href="#"
+                style="text-decoration:none;color:black;font-size:15px;font-weight:bold;">
+                <p>MakeMy Trip ICICI Credit Card<br />
+                    Never
+                    expiring rewards & big benefits</p>
+            </a>
+            <img src="img17.jpg" width="5%" /><a href="#" style="text-decoration:none;color:black;">MICE Offsites,
+                Events & Meetings</a>
+            <img src="img18.jpg" width="5%" /><a href="#" style="text-decoration:none;color:black;">Gift Cards</a>
+        </div>
+    </section>
+
+    <!--section 4-->
+    <section class="child1">
+        <div class="child21 child22" style="font-size : 15px;">
+            <h2>Offers</h2>
+            <p href="#">All Offers</p>
+            <p href="#">Bank Offers</p>
+            <p href="#">Flights</p>
+            <p href="#">Hotels</p>
+            <p href="#">Holidays</p>
+            <p href="#">Trians</p>
+            <p href="#">Cabs</p>
+            <p href="#">Bus</p>
+            <p href="#">Forex</p>
+            <p href="#">VIEW ALL</p>
+        </div>
+        <div class="child22">
+            <img src="img19.jpg" width="10%" style="position : relative;" />
+            <pre style="font-family:Arial;">DOM HOTELS                     T&C'S APPLY</pre>
+            <h2>Year-end deals for your Travel</h2>
+            <p>Wishlist upto: 40%</p>
+            <p>On Flights, Stays, Packages, Buses, Cabs & Trains.</p>
+            <a href="#" id="bnow1">BOOK NOW</a>
+        </div>
+        <div class="child22">
+            <img src="img20.jpg" width="10%" />
+            <pre style="font-family:Arial;">DOM HOTELS                     T&C'S APPLY</pre>
+            <h2>Year-end deal: Up to 20% OFF*</h2>
+            <p>On Domestic Flights!</p>
+            <a href="#" id="bnow2">BOOK NOW</a>
+        </div>
+        <div class="child22">
+            <img src="img21.jpg" width="10%" />
+            <p>
+            <pre style="font-family:Arial;">DOM HOTELS                  T&C'S APPLY</pre>
+            </p>
+            <h2>Year-end deal: Upto 40% OFF*</h2>
+            <p>On Hotels and homestays in India!</p>
+            <a href="#" id="bnow3">BOOK NOW</a>
+        </div>
+        <div class="child22">
+            <img src="img22.jpg" width="10%" />
+            <p>
+            <pre style="font-family:Arial;">INYL HOTELS                 T&C'S APPLY</pre>
+            </p>
+            <h2>Year-end deals for your Travel</h2>
+            <p>Wishlist upto: 40%</p>
+            <p>On International Flights!</p>
+            <a href="#" id="bnow4">BOOK NOW</a>
+        </div>
+    </section>
+
+    <!--section 5-->
+    <section class="child2">
+        <h1><b>Flagship Hotel Stores on MakeMyTrip</b></h1>
+        <div class="child11"></div>
+        <div class="child12"></div>
+        <div class="child13"></div>
+    </section>
+
+    <!--second part-->
+    <!-- section 6 -->
+    <section class="sec1">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="notepad.jpg" width="40%" />
+                <p>Indian Travel Trends Report
+                    Check out our Indian Travel Trends Report 2023-24 for top travel insights.</p>
+            </div>
+            <div class="grid-item">
+                <img src="aroplane.png" width="40%" />
+                <p>Book Flights with Voice Chat
+                    Use Code: MMTMYRA for extra discounts!</p>
+            </div>
+            <div class="grid-item">
+                <img src="bowl.png" width="40" />
+                <p>Finding Indian Food
+                    Use new filters to find Indian food during international travel!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 7 -->
+    <section class="sec2">
+        <div>
+            <center><img src="advertisement.png" width="70%"></center>
+        </div>
+    </section>
+
+    <!--section 8-->
+
+    <section class="sec3">
+        <div class="promo-container">
+            <div class="promo-header">
+                <img src="download.png" width="30%">
+                <h1>Download App Now!</h1>
+            </div>
+            <p class="promo-text">Use code <b>WELCOMEMMT</b> and get <b>FLAT 12% OFF*</b> on your first domestic flight
+                booking</p>
+            <div class="promo-form">
+                <input type="text" placeholder="+91 Enter Mobile number">
+                <button>GET APP LINK</button>
+                <img src="QR Code.png" width="60%">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--section 9-->
+
+    <section class="sec4">
+
+        <div class="hotel-container">
+
+            <div class="hotel-item">
+                <img src="one.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="two.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="three.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="four.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="five.png" width="100%" />
+            </div>
+        </div>
+    </section>
+    <section class="sec5">
+        <div class="places-header">
+            <h2>Unlock Lesser-Known Wonders of India</h2>
+        </div>
+        <div class="places-container">
+            <div class="places-item">
+                <img src="Screenshot 2024-12-11 070622.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="Screenshot 2024-12-11 070632.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="Screenshot 2024-12-11 070641.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="Screenshot 2024-12-11 070650.png" width="100%" />
+            </div>
+            <div class="hotel-item">
+                <img src="Screenshot 2024-12-11 070650.png" width="100%" />
+            </div>
+        </div>
+    </section>
+    <section class="sec6">
+        <div class="info-container">
+            <div class="info-item">
+                <h3>MakeMyTrip</h3>
+
+                <p>About Us, Investor Relations, Careers, Sustainability, MMT Foundation, Legal Notices, CSR Policy &
+                    Committee, myPartner - Travel Agent Portal, Foreign Exchange, List your hotel, Partners- Redbus,
+                    Partners- Goibibo, Advertise with Us, Holiday-Franchise, Partners- BookMyForex, RedBus Ferry
+                    Malaysia, RedBus Ferry Singapore, redBus Vietnam, redBus Cambodia, Things to Do in Malaysia, Things
+                    to Do in Singapore</p>
+            </div>
+
+            <div class="info-item">
+
+                <h3>Quick Links</h3>
+
+                <p>Delhi Chennai Flights, Delhi Mumbai Flights, Delhi Goa Flights, Chennai Mumbai flights, Mumbai
+                    Hyderabad flights, Kolkata to Rupsi Flights, Rupsi to Guwahati Flights, Pasighat to Guwahati
+                    Flights, Delhi to Khajuraho Flights, Cochin to Agatti Island Flights, Hotels in Delhi, Hotels in
+                    Mumbai, Hotels In Goa, Hotels In Jaipur, Hotels In Ooty, Hotels In Udaipur, Hotels in Puri, Hotels
+                    In North Goa, Hotels In Rishikesh, Honeymoon Packages, Kerala Packages, Kashmir Packages, Ladakh
+                    Packages, Goa Packages, Thailand Packages, Sri Lanka Visa, Thailand Visa, Explore Goa, Explore
+                    Manali, Explore Shimla, Explore Jaipur, Explore Srinagar</p>
+            </div>
+            <div class="info-item">
+                <h3>About the Site</h3>
+
+                <p>Customer Support, Payment Security, Privacy Policy, Cookie Policy, User Agreement, Terms of Service,
+                    Franchise Offices, Make A Payment, Work From Home, Escalation Channel, Report Security Issues</p>
+            </div>
+            <div class="info-item">
+                <h3>Important Links</h3>
+
+                <p>Cheap Flights, Flight Status, Kumbh Mela, Domestic Airlines, International Airlines, Indigo,
+                    Spicejet, GoAir, Air Asia, Air India, Indian Railways, Trip Ideas, Beaches, Honeymoon Destinations,
+                    Romantic Destinations, Popular Destinations, Resorts In Udaipur, Resorts In Munnar, Villas In
+                    Lonavala, Hotels in Thailand, Villas In Goa, Domestic Flight Offers, International Flight Offers,
+                    UAE Flight Offers, USA, UAE, Saudi Arabia, UK, Oman</p>
+            </div>
+            <div class="info-item">
+
+                <h3>Corporate Travel</h3>
+
+                <p>Corporate Travel, Corporate Hotel Booking, Corporate Flight Booking, Business Travel for SME, GST
+                    Invoice for International flights, Business Travel Solutions, GST Invoice for Bus, Corporate Bus
+                    booking, myBiz - Best Business Travel Platform, GST Invoice for Flights, GST Invoice for Corporate
+                    Travel, GST Invoice for Hotels, myBiz for Small Business, Free cancellation on International Flights
+                </p>
+            </div>
+            <div class="info-item">
+
+                <h3>Product Offering</h3>
+
+                <p>Flights, International Flights, Charter Flights, Hotels, International Hotels, Homestays and Villas,
+                    Activities, Holidays In India, International Holidays, Book Hotels From UAE, myBiz for Corporate
+                    Travel, Book Online Cabs, Book Bus Tickets, Book Train Tickets, Cheap Tickets to India, Book Flights
+                    From US, Book Flights From UAE, Trip Planner, Forex Card, Buy Foreign Currency, Travel Insurance,
+                    Travel Insurance Thailand, Travel Insurance USA, Travel Insurance Dubai, Travel Insurance Canada,
+                    Travel Insurance Singapore, Gift Cards, Gift, Wedding Gift, Anniversary Gift, Birthday Gift, Diwali
+                    Gift, Valentines Gift, Farewell Gift, Christmas Gift, New Year Gift, Trip Money, Trip Ideas, Travel
+                    Blog, PNR Status, MakeMyTrip Advertising Solutions, One Way Cab</p>
+            </div>
+            <div class="info-item">
+
+                <h3>Top Hotels in India</h3>
+
+                <p>Fairmont Jaipur, St Regis Goa, Six Senses Fort Barwara, W Goa, Grand Hyatt Goa, Shangri-La Bangalore,
+                    The St Regis Mumbai, Taj Rishikesh, Grand Hyatt Mumbai, Le Meridien Delhi, Rambagh Palace Jaipur,
+                    Leela Palace Chennai, The Leela Palace Udaipur, Taj Lake Palace Udaipur, Jw Marriott Chandigarh,
+                    Alila Diwa Goa, Le Meridien Goa, Taj Lands End Mumbai, Itc Grand Chola Chennai, Itc Maratha Mumbai,
+                    Oberoi Udaivilas, Jai Mahal Palace Jaipur, Taj Mahal Tower Mumbai, Marriott Suites Pune, Park Hyatt
+                    Chennai, The Leela Palace Jaipur, Jw Marriott Mumbai Sahar, Jw Marriott Mumbai Juhu, The Ritz
+                    Carlton Bengaluru, The Oberoi New Delhi, Taj Resort & Convention Centre Goa, Taj Bengal Kolkata, Taj
+                    Coromandel Chennai, The Oberoi Gurgaon, The Westin Goa, Jw Marriott Hotel Pune, The Leela Palace New
+                    Delhi, Taj West End Bengaluru, The Taj Mahal Palace Mumbai, Best Hotels in India</p>
+            </div>
+            <div class="info-item">
+
+                <h3>Top International hotels</h3>
+
+                <p>Adaaran Club Rannalhi, Marina Bay Sands Singapore, Coco Bodu Hithi, Taj Dubai, Atlantis Hotel Dubai,
+                    Amari Phuket, Jw Marriott Dubai, Armani Hotel Dubai, Grand Hyatt Dubai, Saii Lagoon Maldives, Gevora
+                    Hotel Dubai, Hyatt Regency Dubai, Pan Pacific Singapore, The Palm Dubai, Caesars Palace, Baiyoke Sky
+                    Hotel, Centara Pattaya Hotel, Embudu Village, Orchard Hotel Singapore, Reethi Beach Resort,
+                    Ambassador Hotel Bangkok, Dusit Thani Pattaya, Shangri La Singapore, Sunbeam Hotel Pattaya, Taj
+                    Samudra Colombo, Bangkok Palace Hotel, Hilton Pattaya, Novotel Phuket Resort, Taj Exotica Resort
+                    Maldives, Village Hotel Bugis, Avani Atrium Bangkok, The Plaza New York, Village Hotel Albert Court,
+                    Amari Pattaya</p>
+            </div>
+            <div class="info-item">
+
+                <h3>Book Hotels in India from Top Destinations</h3>
+
+                <p>Hotels in Jaipur, Hotels in Goa, Hotels in Delhi, Hotels in Udaipur, Hotels in Gurgaon, Hotels in
+                    Mumbai, Hotels in Bangalore, Hotels in Rishikesh, Hotels in Agra, Hotels in Chennai, Hotels in
+                    Kasauli, Hotels in Kolkata, Hotels in Pune, Hotels in Manali, Hotels in Lonavala, Hotels in Shimla,
+                    Hotels in Munnar, Hotels in Ayodhya, Hotels in Gulmarg, Hotels in Leh, Hotels in Hyderabad</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec7">
+        <div class="data-container">
+            <div class="data-item">
+                <h3> Why MakeMyTrip?</h3>
+
+                <p>Established in 2000, MakeMyTrip has since positioned itself as one of the leading companies,
+                    providing great offers, competitive airfares, exclusive discounts, and a seamless online booking
+                    experience to many of its customers. The experience of booking your flight tickets, hotel stay, and
+                    holiday package through our desktop site or mobile app can be done with complete ease and no hassles
+                    at all. We also deliver amazing offers, such as Instant Discounts, Fare Calendar, MyRewardsProgram,
+                    MyWallet, and many more while updating them from time to time to better suit our customers’ evolving
+                    needs and demands. </p>
+            </div>
+            <div class="data-item">
+                <h3>Booking Flights with MakeMyTrip</h3>
+
+                <p>At MakeMyTrip, you can find the best of deals and cheap air tickets to any place you want by booking
+                    your tickets on our website or app. Being India’s leading website for hotel, flight, and holiday
+                    bookings, MakeMyTrip helps you book flight tickets that are affordable and customized to your
+                    convenience. With customer satisfaction being our ultimate goal, we also have a 24/7 dedicated
+                    helpline to cater to our customer’s queries and concerns. Serving over 5 million happy customers, we
+                    at MakeMyTrip are glad to fulfill the dreams of folks who need a quick and easy means to find air
+                    tickets. You can get a hold of the cheapest flight of your choice today while also enjoying the
+                    other available options for your travel needs with us.</p>
+            </div>
+            <div class="data-item">
+                <h3>Domestic Flights with MakeMyTrip</h3>
+                <p>MakeMyTrip is India's leading player for flight bookings. With the cheapest fare guarantee,
+                    experience great value at the lowest price. Instant notifications ensure current flight status,
+                    instant fare drops, amazing discounts, instant refunds and rebook options, price comparisons and
+                    many more interesting features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--section 10-->
+
+    <section class="sec8">
+        <div class="social-container">
+            <div class="social-item1">
+                <img src="Screenshot 2024-12-15 110115.png" width="102%">
+            </div>
+            <div class="social-item2">
+                <img src="Screenshot 2024-12-15 110134.png" width="100%">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
